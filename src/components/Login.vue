@@ -27,7 +27,7 @@
               :invalid-feedback="invalidPassword"
               :state="checkPassword"
             >
-              <b-form-input class="form-control" id="input2" :state="checkPassword" v-model="password"  @keypress.native="checkCaps"
+              <b-form-input type="password" class="form-control" id="input2" :state="checkPassword" v-model="password"  @keypress.native="checkCaps"
                             :placeholder="($t('enterPassword1'))" required></b-form-input>
               <b-alert class="alert"
                        variant="danger"
@@ -179,12 +179,15 @@ export default {
     width: 200px;
 
   }
-  @media (max-height: 800px){
+  @media (max-height: 600px){
     .main-section{
       height: 100%;
     }
     .login-image-main{
       margin-bottom: 3%;
+    }
+    .user-login-header h1{
+      margin-top: 1%;
     }
   }
 </style>

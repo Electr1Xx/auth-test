@@ -21,7 +21,7 @@
               :invalid-feedback="invalidEmail"
               :state="emailCheck"
             >
-              <b-form-input class="form-control" id="input_email" :state="emailCheck" v-model="email" :placeholder="($t('enterEmail'))" required></b-form-input>
+              <b-form-input type="text" class="form-control" id="input_email" :state="emailCheck" v-model="email" :placeholder="($t('enterEmail'))" required></b-form-input>
             </b-form-group>
             <b-form-group
               class="form-group"
@@ -29,7 +29,7 @@
               :invalid-feedback="invalidUsername"
               :state="checkUsername"
             >
-              <b-form-input class="form-control" id="input_username" :state="checkUsername" v-model="username" :placeholder="($t('enterUsername'))" required></b-form-input>
+              <b-form-input type="text" class="form-control" id="input_username" :state="checkUsername" v-model="username" :placeholder="($t('enterUsername'))" required></b-form-input>
             </b-form-group>
             <b-form-group
               class="form-group"
@@ -37,7 +37,7 @@
               :invalid-feedback="invalidPassword1"
               :state="checkPassword"
             >
-              <b-form-input class="form-control" @keypress.native="checkCaps"  id="input_password1" :state="checkPassword" v-model="password1" :placeholder="($t('enterPassword1'))" required></b-form-input>
+              <b-form-input type="password" class="form-control" @keypress.native="checkCaps"  id="input_password1" :state="checkPassword" v-model="password1" :placeholder="($t('enterPassword1'))" required></b-form-input>
               <b-alert class="alert"
                        variant="danger"
                        :show="capsLockEnabled"
@@ -49,7 +49,7 @@
               :invalid-feedback="invalidPassword2"
               :state="confirmPassword"
             >
-              <b-form-input class="form-control" id="input_password2" :state="confirmPassword" v-model="password2" :placeholder="($t('enterPassword2'))"></b-form-input>
+              <b-form-input type="password" class="form-control" id="input_password2" :state="confirmPassword" v-model="password2" :placeholder="($t('enterPassword2'))"></b-form-input>
             </b-form-group>
             <p>{{error}}</p>
             <b-link :disabled="isValid()" @click="registration()" class="btn btn-defualt">{{$t('SignUp')}}</b-link>
@@ -262,12 +262,15 @@ export default {
     left: 97%;
     width: 200px;
   }
-  @media (max-height: 800px){
+  @media (max-height: 735px){
     .main-section{
       height: 100%;
     }
     .login-image-main{
-      margin-bottom: 3%;
+      margin-bottom: 4%;
+    }
+    .user-login-header {
+      margin-top: 1%;
     }
   }
 </style>
