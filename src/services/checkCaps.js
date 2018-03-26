@@ -10,4 +10,3 @@ export var CheckCaps = (event) => {
     return false
   }
 }
-
