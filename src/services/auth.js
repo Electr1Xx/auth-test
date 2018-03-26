@@ -3,7 +3,7 @@ import Vue from 'vue'
 import store from '../store'
 
 // URL and endpoint constants
-const API_URL = 'https://api.test.simplex.ink/app_dev.php/'
+const API_URL = 'http://api.test.simplex.ink/app_dev.php/'
 const client_id = '1_1fwfg4mreq680s0404s8g8ggkgkkgoc08skow044o08cwckc4o'
 const client_secret = '3kz917qhoo6ccw8ogg8og0k8k4kw80skokg8scsco88k8wk4wk'
 
@@ -94,7 +94,7 @@ export var IS_EXPIRED_TOKEN = () => {
 export var GET_CURRENT_POSITION_BROWSER = (lat, lng) => {
   const options = {
     method: 'GET',
-    uri: 'https://api.geonames.org/countryCodeJSON',
+    uri: 'http://api.geonames.org/countryCodeJSON',
     qs: {
       formatted: true,
       lat: lat,

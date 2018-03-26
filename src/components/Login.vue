@@ -175,7 +175,7 @@ export default {
   .alert{
     position: absolute;
     top: 65px;
-    left: 520px;
+    left: 97%;
     width: 200px;
 
   }

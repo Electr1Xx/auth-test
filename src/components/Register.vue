@@ -259,7 +259,7 @@ export default {
   .alert{
     position: absolute;
     top: 120px;
-    left: 520px;
+    left: 97%;
     width: 200px;
   }
   @media (max-height: 800px){
