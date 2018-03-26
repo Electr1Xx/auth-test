@@ -1,0 +1,20 @@
+export const en = {
+  'SignUp': 'Sign Up',
+  'SignIn': 'Sign In',
+  'enterEmail': 'Enter email',
+  'enterUsername': 'Enter username',
+  'enterPassword1': 'Enter password',
+  'enterPassword2': 'Repeat password',
+  'haveAccount': 'Already a member?',
+  'notAccount': 'Not registered?',
+  'createAccount': 'Create an account',
+  'shortUsername': 'Username is short',
+  'emailNotValid': 'Email not valid',
+  'shortPassword': 'Password is short',
+  'passwordNotMatch': 'Passwords don\'t match',
+  'error': 'Error',
+  'alreadyExist': 'Already exist',
+  'capslock': 'Caps Lock is enabled',
+  'logout': 'Logout',
+  'footer': 'Footer'
+}
