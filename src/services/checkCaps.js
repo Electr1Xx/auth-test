@@ -11,10 +11,3 @@ export var CheckCaps = (event) => {
   }
 }
 
-/*
-$('#example').keypress(function(e) {
-  var s = String.fromCharCode( e.which );
-  if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
-    alert('caps is on');
-  }
-}); */
