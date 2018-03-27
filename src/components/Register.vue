@@ -210,7 +210,7 @@ export default {
     height: 100vh;
   }
   .user-login-header{
-    margin-top: 5%;
+    margin-top: 2%;
   }
   .login-image-main{
     margin-top: 15px;
